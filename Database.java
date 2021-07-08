@@ -10,7 +10,7 @@ import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/** Database class for store item of category **/
 public class Database extends SQLiteAssetHelper {
     private static final String DB_NAME="exp.db";
     private static final   int DB_VER=1;
