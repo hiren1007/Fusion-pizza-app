@@ -59,20 +59,5 @@ public class lamb extends AppCompatActivity {
                 Toast.makeText(lamb.this, "Item is Added", Toast.LENGTH_SHORT).show();
             }
         });
-
-        /*nonvegthaali = (Button) findViewById(R.id.nonvegthaali);
-        nonvegthaali.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new Database(getBaseContext()).addToCart(new Order(
-                        "09",
-                        "Non-Veg Thaali",
-                        counterButton9.getNumber(),
-                        "70"
-                ));
-
-                Toast.makeText(lamb.this, "Item is Added", Toast.LENGTH_SHORT).show();
-            }
-        });*/
     }
 }
