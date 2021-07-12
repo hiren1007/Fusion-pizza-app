@@ -26,6 +26,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
+//This class help to adapt item with use of view holder class.
+
+
 class CartViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
         ,View.OnCreateContextMenuListener{
 
@@ -76,7 +79,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartViewHolder>{
         View itemView=inflater.inflate(R.layout.cart_layout,parent,false);
         return new CartViewHolder(itemView);
     }
-
+//This method help to show item value in cart activity class.
     @Override
     public void onBindViewHolder(CartViewHolder holder, final int position){
 
