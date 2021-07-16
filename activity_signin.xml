@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".signin">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtphone"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnsignin"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/w2"
+        android:text="Sign in"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Don't have an Account? Sign up"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:text=" Don't have an account? Sign up." />
+
+</LinearLayout>
