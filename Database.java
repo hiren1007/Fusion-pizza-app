@@ -44,7 +44,7 @@ public class Database extends SQLiteAssetHelper {
         return result;
 
     }
-
+// this method help  to add order from categories into cart page.
     public void addToCart(Order order)
     {
         SQLiteDatabase db=getReadableDatabase();
@@ -56,12 +56,15 @@ public class Database extends SQLiteAssetHelper {
                 order.getPrice());
         db.execSQL(query);
     }
+   // this method help to clean cart page while new order from customer.
     public void cleanCart()
     {
         SQLiteDatabase db=getReadableDatabase();
         String query=String.format("DELETE FROM items");
         db.execSQL(query);
     }
+    
+  // this update method help to update your order from last select item from the list.  
     public void updateCart(Order order)
     {
         SQLiteDatabase db =getReadableDatabase();
